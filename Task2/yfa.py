@@ -12,7 +12,7 @@ class YandexFolderApi:
         return requests.put(self.url, headers=self.headers, params=self.params).status_code
 
 
-token = 'AQAAAAABvFAmAADLW6axqFZnAEOCjQyptuIe_Us'
+token = ''
 
 if __name__ == '__main__':
     print(YandexFolderApi(token, 'Folder_1').create_folder())
